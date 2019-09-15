@@ -1,10 +1,8 @@
 """
 TODO:
-1. Copy from value calculator.py to functions?
-2. Expand implied odds into true_implied_odds calculating implied odds minus the bookie margin
-2. Object oriented - needed as average odds needs to be calculated first - ask andreas about this
 Have average odds or each function as its own class? - import all functions into one main script so its clean. How to approach this?
 Have one file with all functions - Import an run them on a main script which is responsible for taking in HLTV matchpage?/
+
 3. Asyncio - needs to calculate average odds to use value functions
 4. Work out how the main() will work. It has to store results of certain functions before others can be run
 5. BS4 Stuff - see below
@@ -24,7 +22,7 @@ Asyncio - Will at least be needed for web scraping.
 Use BS4 for basic information to add to the games, such as checks if its bo1, bo3, time to match, upcoming, finished etc.
 MLB / NBA lines too efficient (for basic model) - Book has all the data you do and more + the resources to use it well.
 Save all the webpages you scrape to a database before you scrape. Keep your own waybackmachine.
-Dictionary function (NLTK? NAtural language processing) to deal with mislabeled data on sites.
+Dictionary function (NLTK?) to deal with mislabeled data on sites.
 
 BUILD A MODEL TO GET YOUR OWN PREDICTIONS:
 1. Requests & Scrapy + Proxy support for scraping HLTV a lot
